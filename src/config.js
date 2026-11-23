@@ -99,11 +99,5 @@ export const achievements = [
   'National Finalist – Egyptian Electric Vehicle Rally (EVER), Autonomous Driving Track.'
 ];
 
-export const links = {
-  email: 'ayaabdallaha1010@gmail.com',
-  phone: '+201141635138',
-  whatsapp: 'https://wa.me/201141635138',
-  linkedin: 'https://linkedin.com/in/aya-abdallah1010/',
-  github: 'https://github.com/Aia-Abdallah',
-  cv: 'YOUR_CV_LINK'
+
 };
