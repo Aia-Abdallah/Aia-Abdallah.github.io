@@ -1,9 +1,15 @@
 export const links = {
   email: 'ayaabdallaha1010@gmail.com',
   phone: '+201141635138',
+  whatsapp: 'https://wa.me/201141635138',
   linkedin: 'https://linkedin.com/in/aya-abdallah1010/',
   github: 'https://github.com/Aia-Abdallah',
-  cv: 'https://drive.google.com/drive/folders/1E0q99lsl3VE9f9g2nszgBpaz6ZB_cxzm?usp=drive_link'
+
+  // Open CV directly in browser
+  cv: 'https://drive.google.com/file/d/172Ox2eyT4v5H6Z-uGZ-wgfjDeTgE_n7l/preview',
+
+  // Download CV directly
+  cvDownload: 'https://drive.google.com/uc?export=download&id=172Ox2eyT4v5H6Z-uGZ-wgfjDeTgE_n7l'
 };
 
 export const copy = {
