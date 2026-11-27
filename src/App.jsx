@@ -341,10 +341,13 @@ export default function App() {
 
               <div className="hero-actions">
 
-                <a className="btn primary" href="#contact">
-                  {copy.contactMe}
-                  <ArrowUpRight size={17} />
-                </a>
+                <a
+  href="#contact"
+  className="btn primary"
+  onClick={playClickSound}
+>
+  Get in touch
+</a>
 
                 <a
                   className="btn outline"
