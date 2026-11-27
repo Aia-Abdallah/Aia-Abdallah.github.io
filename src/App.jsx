@@ -125,29 +125,23 @@ function Chips({ items }) {
   );
 }
 
-const playClickSound = () => {
-  const audio = new AudioContext();
-  const oscillator = audio.createOscillator();
-  const gain = audio.createGain();
-
-  oscillator.type = 'sine';
-  oscillator.frequency.value = 700;
-
-  gain.gain.setValueAtTime(0.08, audio.currentTime);
-  gain.gain.exponentialRampToValueAtTime(
-    0.001,
-    audio.currentTime + 0.08
-  );
-
-  oscillator.connect(gain);
-  gain.connect(audio.destination);
-
-  oscillator.start();
-  oscillator.stop(audio.currentTime + 0.08);
-
-  oscillator.onended = () => audio.close();
+const playHoverSound = () => {
+  const audio = new Audio('/sounds/hover.mp3');
+  audio.volume = 0.12;
+  audio.play().catch(() => {});
 };
 
+const playClickSound = () => {
+  const audio = new Audio('/sounds/click.mp3');
+  audio.volume = 0.2;
+  audio.play().catch(() => {});
+};
+
+const playSuccessSound = () => {
+  const audio = new Audio('/sounds/success.mp3');
+  audio.volume = 0.18;
+  audio.play().catch(() => {});
+};
 
 export default function App() {
   const [menu, setMenu] = useState(false);
