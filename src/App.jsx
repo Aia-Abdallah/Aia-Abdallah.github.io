@@ -172,15 +172,33 @@ export default function App() {
           ))}
         </nav>
 
-        <a
-          className="nav-cta"
-          href={links.cvDownload}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Download size={15} />
-          CV
-        </a>
+       <div className="nav-cv-actions">
+  {/* Open CV */}
+  <a
+    className="nav-cta nav-cv-open"
+    href={links.cv}
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Open CV"
+    aria-label="Open CV"
+  >
+    <FileText size={15} />
+    <span>View CV</span>
+  </a>
+
+  {/* Download CV */}
+  <a
+    className="nav-cta nav-cv-download"
+    href={links.cvDownload}
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Download CV"
+    aria-label="Download CV"
+  >
+    <Download size={15} />
+    <span>Download</span>
+  </a>
+</div>
 
         <button
           className="menu-btn"
